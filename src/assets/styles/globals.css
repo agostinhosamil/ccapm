@@ -1,0 +1,11 @@
+@tailwind components;
+@tailwind utilities;
+@tailwind base;
+
+button {
+  @apply outline-none cursor-pointer;
+}
+
+* {
+  @apply select-none box-border;
+}

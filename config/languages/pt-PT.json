@@ -1,0 +1,218 @@
+{
+  "messages": {
+    "already_registered": "Já tem uma conta? $0(Iniciar sessão)",
+    "not_registered_yet": "Ainda não tem uma conta? $0(Criar conta agora)",
+    "lost_password": "Perdeste a tua palavra passe? $0(Recuperar palavra passe)",
+    "thats_not_you": "Esta conta não é tua? $0(Localizar a tua conta)",
+    "did_not_receive_authentication_token": "Não recebeu um código/link de verificação? $0(Reenviar código de verificação)"
+  },
+  "validations": {
+    "field_is_required": "O campo $0 é obrigatório",
+    "not_provided_username": "Informe o seu nome de utilizador, email ou número de telefone para localizar a sua conta"
+  },
+  "descriptions": {
+    "recover_password": "Para recuperar a tua palavra passe precisa encontrar a sua conta...",
+    "setup_account_recover": "Muito bem, localizamos a tua conta. Agora vamos enviar um código ou link de recuperação para que possas redefinir a tua palavra passe e recuperar o acesso a tua conta.",
+    "submit_authentication_token": "Agora precisamos que insiras abaixo o código de recuperação de 4 dígitos enviados para o seu $0, ou podes aguardar até 5 minutos que o irás receber.",
+    "reset_password": "Podes redefinir a tua palavra passe, defina uma que seja mais fácil de recordar para evitar que a voltes a perder."
+  },
+  "errors": {
+    "something_went_wrong": "Pedimos desculpa. Pois alguma coisa correu mal, tente novamente mais tarde."
+  },
+  "form": {
+    "fields": {
+      "full_name": "Nome completo",
+      "name": "Nome",
+      "first_name": "Primeiro nome",
+      "last_name": "Último nome",
+      "nickname": "Apelido",
+      "surname": "Sobrenome",
+      "email": "Email",
+      "email_address": "Endereço de email",
+      "phone": "Telefone",
+      "phone_number": "Número de telefone",
+      "username": "Nome de usuário",
+      "password": "Palavra passe",
+      "login": {
+        "username": "Usuário, Email ou Telefone",
+        "authentication_token": "Código de recuperação"
+      },
+      "password_confirmation": "Repita a palavra passe",
+      "password_tips": [
+        "Utilize pelo menos 6 caracteres",
+        "Varie entre caracteres maiúsculos e minúsculos",
+        "Inclua números relacionados a algo de que se possa lembrar",
+        "Se possível inclua alguns caracteres especiais (Como: %, $, #, @, etc.) quer seja para separar, prefixar ou sufixar palavras"
+      ],
+      "user_types": {
+        "client": {
+          "label": "Sou cliente",
+          "description": "Pretendo contratar serviços pela plataforma"
+        },
+        "freelancer": {
+          "label": "Sou Freelancer",
+          "description": "Não tenho uma empresa, pretendo prestar serviços para a plataforma e outras empresas"
+        },
+        "service_provider": {
+          "label": "Sou Logista",
+          "description": "Tenho uma empresa, e pretendo trazer o meu negócio para a plataforma"
+        }
+      },
+      "submit": {
+        "login": "Iniciar sessão",
+        "register": "Criar conta",
+        "find_account": "Encontrar conta",
+        "get_authentication_token": "Obter código/link de verificação",
+        "submit_authentication_token": "Confirmar",
+        "save_changes": "Salvar alterações",
+        "comment": "Comentar",
+        "post": "Publicar",
+        "save_comment": "Salvar comentário",
+        "save_post": "Salvar publicação"
+      }
+    }
+  },
+  "text": {
+    "create_account": "Criar conta",
+    "create_new_account": "Criar conta nova",
+    "login": "Iniciar sessão",
+    "login_now": "Iniciar sessão agora",
+    "login_right_now": "Iniciar sessão agora mesmo",
+    "service": "Serviço",
+    "reset_password": "Redefinir palavra passe",
+    "recover_password": "Recuperar palavra passe",
+    "setup_account_recover": "Método de recuperação da palavra passe",
+    "submit_authentication_token": "Confirmar propriedade do $0",
+    "accept_terms_and_data_policy": "Ao submeter o formuláro, você concorda com os nossos $0(termos de serviço) bem como com a nossa $1(política de dados).",
+    "dashboard": "Painel administrador",
+    "profile": "Perfil",
+    "account": "Conta",
+    "account_not_found": "A sua conta não foi encontrada",
+    "my_profile": "Meu perfil",
+    "menu": "Menu",
+    "options": "Opções",
+    "option": "Opção",
+    "home": "Início",
+    "homepage": "Página inicial",
+    "employees": "Funcionários",
+    "incomes": "Faturamentos",
+    "requests": "Pedidos",
+    "promotions": "Promoções",
+    "discounts": "Descontos",
+    "marketing": "Marketing",
+    "sells": "Vendas",
+    "services": "Serviços",
+    "formats": "Formatos",
+    "format": "Formato",
+    "scopes": "Escopos",
+    "templates": "Modelos",
+    "template": "Modelo",
+    "resources": "Recursos",
+    "resource": "Recurso",
+    "integrations": "Integrações",
+    "integration": "Integração",
+    "delivery": "Entrega",
+    "deliveries": "Entregas",
+    "assembly": "Montagem",
+    "assemblies": "Montagens",
+    "delivery_data": "Dados de entrega",
+    "assembly_data": "Dados de montagem",
+    "delivery_settings": "Definições de entrega",
+    "assembly_settings": "Definições de montagem",
+    "roles": "Cargos",
+    "role": "Cargo",
+    "permissions": "Permissões",
+    "permission": "Permissão",
+    "settings": "Definições",
+    "setting": "Definição",
+    "data": "Dados",
+    "store_data": "Dados da loja",
+    "payments": "Pagamentos",
+    "payment": "Pagamento",
+    "payment_settings": "Definições de pagamento",
+    "payment_methods": "Métodos de pagamento",
+    "authentication": "Autenticaação",
+    "authentications": "Autenticações",
+    "recent_costumers": "Clientes recentes",
+    "recent_activities": "Actividades recentes",
+    "last_activities": "Últimas actividades",
+    "last_sells": "Últimas vendas",
+    "recent_sells": "Vendas recentes",
+    "view": "Ver",
+    "view_all": "Ver todos",
+    "view_all_f": "Ver todas",
+    "view_more": "Ver mais",
+    "view_first": "Ver o primeiro",
+    "view_last": "Ver o último",
+    "first": "Primeiro",
+    "last": "Último",
+    "first_f": "Primeira",
+    "last_f": "Última",
+    "edit_n": "Editar $0",
+    "delete_n": "Remover $0",
+    "update_n": "Atualizar $0",
+    "language": "Idioma",
+    "languages": "Idiomas",
+    "highlights": "Destaques",
+    "highlight": "Destaque",
+    "home_page": "Página inicial",
+    "me": "Eu",
+    "create": "Criar",
+    "messages": "Mensagens",
+    "user": {
+      "profile": {
+        "message": "Mensagem",
+        "follow": "Seguir",
+        "unfollow": "Deixar de seguir",
+        "block": "Bloquar"
+      }
+    },
+    "edit_photo": "Editar foto",
+    "remove_photo": "Remover foto",
+    "composer": {
+      "add_photo": "Adicionar foto",
+      "add_video": "Adicionar video",
+      "edit_video": "Editar video",
+      "options": "Mais opções",
+      "open_editor": "Abrir Editor",
+      "slogan": "Em que estás a pensar?",
+      "select_photo": "Selecionar foto",
+      "select_video": "Selecionar vídeo",
+      "remove_photo": "Remover foto",
+      "submit": "Publicar",
+      "drag_over": "Ou arraste para aqui",
+      "errors": {
+        "empty_post": "A tua publicação não pode estar vazia."
+      },
+      "video": {
+        "edit_thumb": "Editar capa do vídeo",
+        "reselect": "Selecionar outro vídeo",
+        "remove": "Remover vídeo",
+        "preview": "Previzualizar vídeo",
+        "title": "Título do vídeo",
+        "summary": "Resumo do vídeo",
+        "tag": {
+          "label": "Adicionar tag",
+          "tip": "Prime Enter para inserir a tag"
+        },
+        "description": "Descrição do vídeo"
+      }
+    },
+    "post_done": "Publicação feita com sucesso",
+    "post_failed": "Algo correu mal ao criar a sua publicação. Tente novamente mais tarde",
+    "feed": {
+      "posts": "Publicações",
+      "post": "Publicação",
+      "comments": "Comentários",
+      "comment": "Commentário",
+      "create_comment": "Fazer comentário"
+    },
+    "progress": {
+      "label": {
+        "loading": "A carregar... ($0%)"
+      }
+    },
+    "hi_user": "Olá, $0",
+    "go_to_dashboard": "Ir ao painel administrador"
+  }
+}

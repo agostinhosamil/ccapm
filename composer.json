@@ -1,0 +1,61 @@
+{
+  "name": "ysamark/trounex",
+  "description": "Trounex Web App",
+  "type": "project",
+  "license": "MIT",
+  "readme": "README.md",
+  "version": "1.0.0",
+  "homepage": "https://github.com/agostinhosamil/trounex",
+  "scripts": {
+    "phinx": "phinx",
+    "migrations:create": "phinx create",
+    "migrations:run": "phinx migrate",
+    "migrations:status": "phinx status",
+    "migrations:rollback": "phinx rollback",
+    "seed": "phinx seed:run",
+    "migrate": "phinx migrate",
+    "jobs": [
+      "App\\Utils\\Commands\\Jobs::Handle"
+    ],
+    "dev": [
+      "App\\Utils\\Development\\Commands::dev"
+    ]
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": [
+        "App/"
+      ]
+    },
+    "psr-0": {
+      "App\\": [
+        "App/"
+      ]
+    },
+    "files": [
+      "utils/index.php"      
+    ]
+  },
+  "authors": [
+    {
+      "name": "Agostinho Sam'l",
+      "email": "agostinhosaml832@gmail.com",
+      "homepage": "https://agostinhosamil.github.io",
+      "role": "developer"
+    }
+  ],
+  "prefer-stable": true,
+  "minimum-stability": "dev",
+  "require": {
+    "php": ">=8.1",
+    "ysamark/trounex-core": "dev-main"
+  },
+  "require-dev": {
+    "ysamark/trounex-dev-packs": "dev-main"
+  },
+  "config": {
+    "allow-plugins": {
+      "kylekatarnls/update-helper": true
+    }
+  }
+}

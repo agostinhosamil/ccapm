@@ -1,0 +1,2971 @@
+main.page-main-content {
+  width: 100%;
+  padding: 30px 70px 70px;
+  position: relative;
+}
+main.page-main-content div.data-news-feed-container,
+main.page-main-content div.data-news-feed-post-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 0px 0px 80px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item {
+  width: 100%;
+  max-width: 715px;
+  margin: 0px 0px 26px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  height: max-content;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container {
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(0, 0, 0, 0.13);
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  margin-right: 30px;
+  min-height: 700px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.content-body-wrapper,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.content-body-wrapper {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container h3,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container h3 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #464343;
+  display: block;
+  padding: 30px 30px 20px;
+  margin: 0px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container h3 p,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container h3 p {
+  font-size: inherit;
+  margin: 0px 0px 25px;
+  padding: 0px;
+  display: block;
+  line-height: 41px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container h3.collapse,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container h3.collapse {
+  margin: 0px 0px 20px;
+  overflow-y: hidden;
+  max-height: 170px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper {
+  width: calc(100% + 20px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin: -10px 0px -10px -10px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo {
+  width: 50%;
+  padding: 8px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  cursor: pointer;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo img,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  border: 0px;
+  outline: 0px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 8px;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data div,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data div {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  font-size: 25px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data div span,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data div span {
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: 400;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data div i,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data div i {
+  display: block;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: -10px;
+  font-size: 23px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data div:hover,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo data div:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  font-size: 32px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo.x-expand,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-photo-list div.data-post-photo.x-expand {
+  width: 100%;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container {
+  width: 100%;
+  padding: 10px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media {
+  width: 100%;
+  position: relative;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-thumbnail-wrapper,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-thumbnail-wrapper {
+  width: 100%;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-thumbnail-wrapper img,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-thumbnail-wrapper img {
+  width: 100%;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  min-height: 620px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper button,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper button {
+  width: 100%;
+  height: 100%;
+  border: 0px;
+  outline: 0px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  font-size: 25px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper button svg,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper button svg {
+  margin-right: -5px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper button:hover,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper button:hover {
+  background-color: #ebebeb;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper button:active,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-media-wrapper div.data-post-media-container div.data-post-media div.data-post-media-play-button-wrapper button:active {
+  background-color: #d8d8d8;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 12px 0px 0px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper a.data-post-attachment-preview-container,
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview-container,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper a.data-post-attachment-preview-container,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  outline: 0px;
+  position: relative;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo {
+  width: 50%;
+  padding: 8px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  cursor: pointer;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo img,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  border: 0px;
+  outline: 0px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 8px;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  font-size: 25px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div span,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div span {
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: 400;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div i,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div i {
+  display: block;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: -10px;
+  font-size: 23px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div:hover,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  font-size: 32px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo.x-expand,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo.x-expand {
+  width: 100%;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview.post .attachment-photos-wrapper,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview.post .attachment-photos-wrapper {
+  width: calc(100% + 20px);
+  margin: -10px 0px 20px -10px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5 {
+  font-weight: 400;
+  color: #1d1d1d;
+  font-size: 21px;
+  display: -webkit-box;
+  margin: 0px 0px 20px;
+  line-height: 27px;
+  max-height: 165px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  padding: 25px 30px 0px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5.x-expand,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5.x-expand {
+  display: block;
+  max-height: unset;
+  overflow: unset;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper {
+  width: 80px;
+  height: 100%;
+  display: inline-flex;
+  flex: 1;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 80px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li {
+  width: 100%;
+  margin: 6px 0px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li a,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  position: relative;
+  margin-bottom: 12px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li a img,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li a img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button {
+  width: 50px;
+  height: 50px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  border: 0px;
+  outline: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active {
+  font-weight: 600;
+  color: #ffffff;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.primary,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.primary {
+  background-color: rgb(153, 55, 140);
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.red,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.red {
+  background-color: rgb(197, 68, 68);
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button svg,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button svg {
+  width: 24px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button:hover,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button:hover {
+  background-color: #e2e2e2;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button:active,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button:active {
+  background-color: #c9c7c7;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.primary:hover,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.primary:hover {
+  background-color: rgb(102, 35, 93);
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.primary:active,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.primary:active {
+  background-color: rgb(70, 24, 64);
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.red:hover,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.red:hover {
+  background-color: rgb(153, 48, 48);
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.red:active,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li button.x-active.red:active {
+  background-color: rgb(134, 40, 40);
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li span,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li span {
+  font-size: 13px;
+  color: #505050;
+  font-weight: 400;
+  display: block;
+  margin-top: -2px;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container button,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container button {
+  background-color: #7c0a6e;
+  width: inherit;
+  height: inherit;
+  border: 0px;
+  outline: 0px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container button svg,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container button svg {
+  width: 100%;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container button:hover,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container button:hover {
+  background-color: #5a0850;
+}
+main.page-main-content div.data-news-feed-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container button:active,
+main.page-main-content div.data-news-feed-post-container article.data-feed-item div.actions-buttons-wrapper ul li div.data-follow-button-container button:active {
+  background-color: #41053a;
+}
+main.page-main-content div.data-news-feed-container div.data-post-back-button,
+main.page-main-content div.data-news-feed-post-container div.data-post-back-button {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  top: 30px;
+  right: 45px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-back-button button,
+main.page-main-content div.data-news-feed-post-container div.data-post-back-button button {
+  border: 0px;
+  outline: 0px;
+  background-color: #ebebeb;
+  width: inherit;
+  height: inherit;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main.page-main-content div.data-news-feed-container div.data-post-back-button button:hover,
+main.page-main-content div.data-news-feed-post-container div.data-post-back-button button:hover {
+  background-color: #d3d3d3;
+}
+main.page-main-content div.data-news-feed-container div.data-post-back-button button:active,
+main.page-main-content div.data-news-feed-post-container div.data-post-back-button button:active {
+  background-color: #bbbbbb;
+}
+main.page-main-content div.data-news-feed-container div.data-expanded-fixed-post,
+main.page-main-content div.data-news-feed-post-container div.data-expanded-fixed-post {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background: #ffffff;
+  z-index: 25;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 0px 0px 50px 105px;
+}
+main.page-main-content div.data-news-feed-container div.data-expanded-fixed-post article.data-feed-item,
+main.page-main-content div.data-news-feed-post-container div.data-expanded-fixed-post article.data-feed-item {
+  margin: 0px;
+  align-items: flex-start;
+}
+main.page-main-content div.data-news-feed-container div.data-expanded-fixed-post article.data-feed-item div.content-container,
+main.page-main-content div.data-news-feed-post-container div.data-expanded-fixed-post article.data-feed-item div.content-container {
+  margin: 0px;
+  border: 0px;
+  padding: 20px 0px 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+main.page-main-content div.data-news-feed-container div.data-expanded-fixed-post article.data-feed-item div.content-container div.content-body-wrapper,
+main.page-main-content div.data-news-feed-post-container div.data-expanded-fixed-post article.data-feed-item div.content-container div.content-body-wrapper {
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+main.page-main-content div.data-news-feed-container div.data-expanded-fixed-post article.data-feed-item div.content-container h3,
+main.page-main-content div.data-news-feed-post-container div.data-expanded-fixed-post article.data-feed-item div.content-container h3 {
+  margin: 30px 0px;
+  padding: 0px;
+}
+main.page-main-content div.data-news-feed-container div.data-expanded-fixed-post div.actions-buttons-wrapper,
+main.page-main-content div.data-news-feed-post-container div.data-expanded-fixed-post div.actions-buttons-wrapper {
+  position: fixed;
+  left: 10px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+main.page-main-content div.data-news-feed-container div.data-expanded-fixed-post div.actions-buttons-wrapper ul,
+main.page-main-content div.data-news-feed-post-container div.data-expanded-fixed-post div.actions-buttons-wrapper ul {
+  padding: 0px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container {
+  width: 100%;
+  display: block;
+  padding-left: 29px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item {
+  margin: 0px;
+  align-items: flex-start;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container {
+  margin: 0px;
+  border: 0px;
+  margin: 0px 0px 30px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container h3,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container h3 {
+  padding: 0px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 12px 0px 0px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper a.data-post-attachment-preview-container,
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview-container,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper a.data-post-attachment-preview-container,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  outline: 0px;
+  position: relative;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo {
+  width: 50%;
+  padding: 8px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  cursor: pointer;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo img,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  border: 0px;
+  outline: 0px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 8px;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  font-size: 25px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div span,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div span {
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: 400;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div i,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div i {
+  display: block;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: -10px;
+  font-size: 23px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div:hover,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  font-size: 32px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo.x-expand,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo.x-expand {
+  width: 100%;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview.post .attachment-photos-wrapper,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview.post .attachment-photos-wrapper {
+  width: calc(100% + 20px);
+  margin: -10px 0px 20px -10px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5 {
+  font-weight: 400;
+  color: #1d1d1d;
+  font-size: 21px;
+  display: -webkit-box;
+  margin: 0px 0px 20px;
+  line-height: 27px;
+  max-height: 165px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  padding: 25px 30px 0px;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5.x-expand,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container article.data-feed-item div.content-container div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5.x-expand {
+  display: block;
+  max-height: unset;
+  overflow: unset;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container div.actions-buttons-wrapper,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container div.actions-buttons-wrapper {
+  position: fixed;
+  left: 10px;
+  top: 0px;
+  bottom: 0px;
+  margin: auto;
+}
+main.page-main-content div.data-news-feed-container div.data-post-page-container div.actions-buttons-wrapper ul,
+main.page-main-content div.data-news-feed-post-container div.data-post-page-container div.actions-buttons-wrapper ul {
+  padding: 0px;
+}
+main.page-main-content div.data-news-feed-post-container {
+  padding: 0px 0px 50px;
+}
+
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 12px 0px 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper a.data-post-attachment-preview-container,
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview-container,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper a.data-post-attachment-preview-container,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview-container {
+  display: block;
+  width: 100%;
+  height: auto;
+  outline: 0px;
+  position: relative;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview {
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  -webkit-border-radius: 4px;
+  background-color: #f5f5f5;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo {
+  width: 50%;
+  padding: 8px;
+  position: relative;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  cursor: pointer;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  border: 0px;
+  outline: 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 8px;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  font-size: 25px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div span,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div span {
+  color: #ffffff;
+  font-size: inherit;
+  font-weight: 400;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div i,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div i {
+  display: block;
+  font-style: normal;
+  color: #ffffff;
+  font-weight: 400;
+  margin-top: -10px;
+  font-size: 23px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo data div:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  font-size: 32px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo.x-expand,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview div.data-post-photo-list div.data-post-photo.x-expand {
+  width: 100%;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview.post .attachment-photos-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview.post .attachment-photos-wrapper {
+  width: calc(100% + 20px);
+  margin: -10px 0px 20px -10px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5 {
+  font-weight: 400;
+  color: #1d1d1d;
+  font-size: 21px;
+  display: -webkit-box;
+  margin: 0px 0px 20px;
+  line-height: 27px;
+  max-height: 165px;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  padding: 25px 30px 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5.x-expand,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-post-attachment-previews-wrapper div.data-post-attachment-preview h5.x-expand {
+  display: block;
+  max-height: unset;
+  overflow: unset;
+}
+
+div.data-post-comments-container {
+  width: 100%;
+  max-width: 715px;
+}
+div.data-post-comments-container h1 {
+  font-size: 42px;
+  font-weight: 500;
+  color: #424242;
+  display: block;
+  padding: 30px 0px 15px;
+}
+div.data-post-comments-container ul.data-post-comments-list {
+  width: 100%;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item {
+  width: 100%;
+  display: block;
+  margin: 12px 0px 0px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper {
+  width: 60px;
+  margin-right: 15px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  margin-bottom: 3px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  margin-bottom: 12px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li a i {
+  display: block;
+  position: relative;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li a img,
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li a i {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li button {
+  width: 40px;
+  height: 40px;
+  background-color: #ebebeb;
+  border-radius: 50%;
+  border: 0px;
+  outline: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li button svg {
+  width: 80%;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li button:hover {
+  background-color: #e2e2e2;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li button:active {
+  background-color: #c9c7c7;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li button.x-active {
+  font-weight: 600;
+  color: #ffffff;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li button.x-active.primary {
+  background-color: rgb(153, 55, 140);
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li button.x-active.primary:hover {
+  background-color: rgb(102, 35, 93);
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li button.x-active.primary:active {
+  background-color: rgb(70, 24, 64);
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li span {
+  font-size: 11px;
+  font-weight: 300;
+  color: #303030;
+  display: block;
+  margin-top: 2px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li div {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li div button {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #7c0a6e;
+  color: #ffffff;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li div button:hover {
+  background-color: #5a0850;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li div button:active {
+  background-color: #41053a;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-actions-buttons-wrapper ul li.data-post-comment-user-photo-wrapper {
+  margin-bottom: 10px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-content-container {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-content-container.with-children {
+  border-left: 2px dashed rgba(243, 243, 243, 0.92);
+  border-top-left-radius: 15px;
+  margin-bottom: -18px;
+  padding-bottom: 20px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-content-container div.data-post-comment-content {
+  background-color: #f7f7f7;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  padding: 12px 19px;
+  min-height: 250px;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 12px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-content-container div.data-post-comment-content h5 {
+  font-size: 21px;
+  font-weight: 400;
+  color: #525252;
+  display: block;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+  line-height: 30px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-content-container div.data-post-comment-content h5 p {
+  display: block;
+  width: auto;
+  margin: 15px 0px;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+  line-height: 30px;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-content-container div.data-post-comment-content h5.placeholder {
+  display: block;
+  width: 100%;
+}
+div.data-post-comments-container ul.data-post-comments-list li.data-post-comments-list-item div.data-post-comment div.data-post-comment-content-container div.data-post-comment-content h5.placeholder p {
+  background-color: #ebebeb;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -ms-border-radius: 6px;
+  -moz-border-radius: 6px;
+  -o-border-radius: 6px;
+  width: 100%;
+  height: 20px;
+}
+
+div.data-comment-composer-form-container {
+  width: 100%;
+  max-width: 715px;
+  margin-top: 10px;
+}
+div.data-comment-composer-form-container form {
+  width: 100%;
+  display: block;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content {
+  width: 100%;
+  height: auto;
+  display: block;
+  background-color: #ffffff;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -o-border-radius: 8px;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.05);
+  padding: 35px 0px 5px;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-textarea-wrapper {
+  width: 100%;
+  padding: 0px 30px 20px;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-textarea-wrapper textarea {
+  width: 100%;
+  border: 0px;
+  outline: 0px;
+  background-color: transparent;
+  font-size: 27px;
+  font-weight: 400;
+  color: #383838;
+  height: 60px;
+  line-height: 27px;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-textarea-wrapper textarea.x-typing {
+  height: 180px;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-textarea-wrapper textarea::-webkit-scrollbar-track {
+  background: none transparent scroll repeat 0% 0%;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-textarea-wrapper textarea::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-textarea-wrapper textarea::-webkit-scrollbar-thumb {
+  background-color: #c5c5c5;
+  border-radius: 15px;
+  width: 6px;
+  cursor: initial;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-textarea-wrapper textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #747475;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 5px 20px 0px;
+  border-style: solid;
+  border-color: #ebebeb;
+  border-width: 1px 0px 0px;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ul {
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ul li {
+  margin: 0px 12px 0px 0px;
+  width: max-content;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ul li button {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: 0px;
+  border: 0px;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ul li button svg {
+  width: 80%;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ul li button:hover {
+  background-color: #ebebeb;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ul li button:active {
+  background-color: #b6b6b6;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ol {
+  width: max-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ol li {
+  margin-left: 12px;
+  display: inline-flex;
+  flex-direction: row;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ol li button {
+  padding: 8px 48px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -ms-border-radius: 100px;
+  -moz-border-radius: 100px;
+  -o-border-radius: 100px;
+  border: 0px;
+  background-color: #7c0a6e;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 13px;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ol li button:hover {
+  background-color: #64095a;
+}
+div.data-comment-composer-form-container form div.data-comment-composer-form-content div.data-comment-composer-form-options-wrapper ol li button:active {
+  background-color: #4e0746;
+}
+
+div.data-profile-page-container {
+  width: 100%;
+  max-width: 920px;
+  margin-left: 70px;
+  padding: 30px 0px;
+}
+div.data-profile-page-container div.data-profile-banner-container {
+  width: 100%;
+  position: relative;
+  height: 320px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  background-color: #bca4eb;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 120px;
+  transition: all 0.3s ease-in-out;
+}
+div.data-profile-page-container div.data-profile-banner-container * {
+  transition: inherit;
+}
+div.data-profile-page-container div.data-profile-banner-container div.data-profile-avatar-element-wrapper {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border: 9px solid #ffffff;
+  margin-bottom: -110px;
+}
+div.data-profile-page-container div.data-profile-banner-container div.data-profile-avatar-element-wrapper img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  outline: 0px;
+}
+div.data-profile-page-container div.data-profile-data-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+div.data-profile-page-container div.data-profile-data-wrapper h1,
+div.data-profile-page-container div.data-profile-data-wrapper h5,
+div.data-profile-page-container div.data-profile-data-wrapper ul {
+  width: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+div.data-profile-page-container div.data-profile-data-wrapper ul {
+  width: 100%;
+  height: auto;
+  padding: 30px 20px 0px;
+}
+div.data-profile-page-container div.data-profile-data-wrapper ul li {
+  display: inline-flex;
+  margin: 7px 6px;
+}
+div.data-profile-page-container div.data-profile-data-wrapper ul li button {
+  border: 0px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  background-color: #ebebeb;
+  color: #4b4b4b;
+  padding: 12px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  outline: 0px;
+}
+div.data-profile-page-container div.data-profile-data-wrapper ul li button i {
+  padding: 0px 6px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+div.data-profile-page-container div.data-profile-data-wrapper ul li button i svg {
+  width: 17px;
+}
+div.data-profile-page-container div.data-profile-data-wrapper ul li button span {
+  padding: 0px 6px;
+}
+div.data-profile-page-container div.data-profile-data-wrapper ul li button:hover {
+  background-color: #c9c9c9;
+}
+div.data-profile-page-container div.data-profile-data-wrapper ul li button:active {
+  background-color: #b3b1b1;
+  transform: scale(0.9);
+}
+@media (max-width: 1080px) {
+  div.data-profile-page-container {
+    margin: 0px auto 0px;
+  }
+}
+@media (max-width: 920px) {
+  div.data-profile-page-container {
+    padding: 0px;
+  }
+  div.data-profile-page-container div.data-profile-banner-container {
+    border-radius: 0px;
+    -webkit-border-radius: 0px;
+    height: 180px;
+    margin-bottom: 80px;
+  }
+  div.data-profile-page-container div.data-profile-banner-container div.data-profile-avatar-element-wrapper {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 110px;
+    margin-bottom: -75px;
+    border-width: 5px;
+  }
+}
+
+div.data-photo-gallery-element-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.98);
+  z-index: 30;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-close-button-wrapper {
+  width: 35px;
+  height: 35px;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  z-index: 2;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-close-button-wrapper button {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background-color: #fbfbfb;
+  color: #303030;
+  border: 0px;
+  outline: 0px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-close-button-wrapper button:hover {
+  background-color: #dadada;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-close-button-wrapper button:active {
+  background-color: #bebebe;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-close-button-wrapper button svg {
+  width: 100%;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-control {
+  width: 40px;
+  height: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-control div {
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 3;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-control div button {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 40px;
+  border: 0px;
+  outline: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease-in-out;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-control div button:hover {
+  transform: scale(1.7);
+  color: rgba(255, 255, 255, 0.98);
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-control.next div {
+  padding: 15px 95px 15px 0px;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-control.prev div {
+  padding: 15px 0px 15px 10px;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-body {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  width: 100%;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-body div {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+div.data-photo-gallery-element-container div.data-photo-gallery-body div img {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  max-width: calc(100% - 100px);
+}
+div.data-photo-gallery-element-container ul.data-photo-gallery-map {
+  width: 100%;
+  position: fixed;
+  bottom: 50px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+div.data-photo-gallery-element-container ul.data-photo-gallery-map li {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 6px;
+}
+div.data-photo-gallery-element-container ul.data-photo-gallery-map li div {
+  width: inherit;
+  height: inherit;
+  display: block;
+  cursor: pointer;
+  border: 3px solid transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+div.data-photo-gallery-element-container ul.data-photo-gallery-map li div img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  outline: 0px;
+  border: 0px;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3);
+}
+div.data-photo-gallery-element-container ul.data-photo-gallery-map li div.selected {
+  border-color: #a32682;
+}
+
+div.data-dropdown-box-container {
+  width: 440px;
+  right: 0px;
+  top: 100%;
+  height: auto;
+  background-color: #ffffff;
+  border-radius: 15px;
+  border: 1px solid #f5f5f5;
+  position: absolute;
+  padding: 35px 0px;
+  z-index: 1000;
+  box-shadow: 1px 16px 10px rgba(0, 0, 0, 0.15);
+}
+
+div.data-dropdown-box-container.top-box {
+  box-shadow: 1px -8px 10px rgba(0, 0, 0, 0.15);
+  top: unset;
+  bottom: 100%;
+}
+
+div.data-dropdown-box-container div.data-dropdown-box-body {
+  width: 100%;
+}
+
+div.data-dropdown-box-container div.data-dropdown-box-body div.data-dropdown-box-title-container {
+  width: 100%;
+  padding: 0px 40px 25px;
+  border-bottom: 1px solid #ededed;
+  margin-bottom: 15px;
+}
+
+div.data-dropdown-box-container div.data-dropdown-box-body div.data-dropdown-box-title-container h5 {
+  color: #444444;
+  font-size: 19px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+div.data-dropdown-box-container div.data-dropdown-box-body div.data-dropdown-box-content {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+div.data-dropdown-box-container div.data-dropdown-box-body div.data-dropdown-box-content-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+div.data-dropdown-box-container div.data-dropdown-box-body div.data-dropdown-box-content-wrapper .data-dropdown-box-content-wrapper-container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.data-page-loading-progress {
+  width: 100%;
+  height: 5px;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 10000;
+  background-color: #ffffff;
+  pointer-events: none;
+}
+.data-page-loading-progress::before {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #7c0a6e;
+  width: 0;
+  animation: borealisBar 1.3s linear infinite;
+}
+
+@keyframes borealisBar {
+  0% {
+    left: 0%;
+    right: 100%;
+    width: 0%;
+  }
+  50% {
+    left: 0%;
+    right: 75%;
+    width: 58%;
+  }
+  80% {
+    right: 0%;
+    left: 85%;
+    width: 15%;
+  }
+  100% {
+    left: 100%;
+    right: 0%;
+    width: 0%;
+  }
+}
+@keyframes RotateSpinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes AnimatePlaceholder {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(-20%);
+  }
+}
+@keyframes AnimatePlaceholderSel {
+  from {
+    background-color: rgba(0, 0, 0, 0.514);
+  }
+  to {
+    background-color: rgba(0, 0, 0, 0.003);
+  }
+}
+[data-placeholder] {
+  position: relative;
+  width: 100%;
+  min-height: 20px;
+  overflow: hidden;
+  transition: all 0.5s linear;
+  animation: AnimatePlaceholderSel 1.2s linear infinite;
+}
+[data-placeholder]:before {
+  content: "";
+  display: block;
+  width: 500%;
+  height: 100%;
+  background-image: linear-gradient(124deg, #ffffff, rgba(0, 0, 0, 0.18));
+  transition: all 1.2s linear;
+}
+
+.auth-form-container {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.auth-form-container form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 530px;
+  height: auto;
+  padding: 55px 35px;
+  border: 1px solid #efefef;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.08);
+  border-radius: 8px;
+}
+.auth-form-container form p {
+  display: block;
+  padding: 0px 10px 7px;
+  color: #a0a0a0;
+}
+.auth-form-container form h1 {
+  display: block;
+  width: 100%;
+  padding: 0px 10px 8px;
+  margin: 0px;
+}
+.auth-form-container form div.row {
+  width: 100%;
+}
+.auth-form-container form div.row div.submit-button-container {
+  width: 100%;
+  padding: 15px 10px 0px;
+  text-align: center;
+}
+.auth-form-container form div.row div.submit-button-container button {
+  width: 100%;
+  border: 0px;
+  outline: 0px;
+  background-color: #7c0a6e;
+  color: #ffffff;
+  padding: 15px 15px;
+  border-radius: 55px;
+  font-weight: 600;
+  display: block;
+}
+.auth-form-container form div.row div.submit-button-container button:hover {
+  background-color: #5a0850;
+}
+.auth-form-container form div.row div.submit-button-container button:active {
+  background-color: #3f0539;
+}
+.auth-form-container form div.row div.submit-button-container span {
+  font-size: 13px;
+  font-weight: 400;
+  display: inline-block;
+  margin-top: 15px;
+}
+.auth-form-container form div.row div.submit-button-container span a {
+  font-size: inherit;
+  color: #5a0850;
+  font-weight: 500;
+}
+.auth-form-container form div.row div.submit-button-container span a:hover {
+  text-decoration: underline;
+}
+
+footer#authentication-pages-footer {
+  width: 100%;
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 70px;
+}
+footer#authentication-pages-footer div.logo-wrapper {
+  width: 100%;
+  max-width: 70px;
+}
+footer#authentication-pages-footer div.logo-wrapper div {
+  width: 100%;
+}
+footer#authentication-pages-footer div.logo-wrapper div a {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+footer#authentication-pages-footer div.logo-wrapper div a svg,
+footer#authentication-pages-footer div.logo-wrapper div a img {
+  width: 100%;
+}
+footer#authentication-pages-footer div.menu-wrapper {
+  width: 100%;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer#authentication-pages-footer div.menu-wrapper ul {
+  width: 100%;
+  margin: 0px;
+  padding: 0px 25px 0px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer#authentication-pages-footer div.menu-wrapper ul li {
+  margin: 0px 8px;
+  width: max-content;
+}
+footer#authentication-pages-footer div.menu-wrapper ul li a {
+  color: #444444;
+  font-size: 12px;
+}
+footer#authentication-pages-footer div.menu-wrapper ul li a:hover {
+  text-decoration: underline;
+}
+footer#authentication-pages-footer div.menu-wrapper ol {
+  width: max-content;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer#authentication-pages-footer div.menu-wrapper ol li {
+  width: 42px;
+}
+footer#authentication-pages-footer div.menu-wrapper ol li a,
+footer#authentication-pages-footer div.menu-wrapper ol li button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+}
+footer#authentication-pages-footer div.menu-wrapper ol li a svg,
+footer#authentication-pages-footer div.menu-wrapper ol li a img,
+footer#authentication-pages-footer div.menu-wrapper ol li button svg,
+footer#authentication-pages-footer div.menu-wrapper ol li button img {
+  width: 100%;
+}
+
+div.data-top-header-panel-container {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #682e62;
+  padding: 15px 70px;
+}
+div.data-top-header-panel-container div {
+  width: 100%;
+  max-width: 50%;
+  height: auto;
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+}
+div.data-top-header-panel-container div a {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+div.data-top-header-panel-container div a img {
+  width: inherit;
+  height: inherit;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+}
+div.data-top-header-panel-container div h4 {
+  margin: 0px 0px 0px 12px;
+  padding: 0px;
+  font-weight: 200;
+  color: #ffffff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+div.data-top-header-panel-container ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+div.data-top-header-panel-container ul li {
+  margin: 0px 7px;
+  display: inline-flex;
+}
+div.data-top-header-panel-container ul li a {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+div.data-top-header-panel-container ul li a * {
+  color: inherit;
+}
+div.data-top-header-panel-container ul li a i {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+div.data-top-header-panel-container ul li a i svg {
+  width: 100%;
+}
+div.data-top-header-panel-container ul li a span {
+  display: block;
+  padding-left: 8px;
+}
+div.data-top-header-panel-container ul li a:hover {
+  text-decoration: underline;
+  color: #ddc8db;
+}
+
+header#page-header {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background-color: #ffffff;
+  padding: 10px 70px;
+  border-bottom: 1px solid #ececec;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+header#page-header div.logo-wrapper {
+  width: 100%;
+  max-width: 75px;
+}
+header#page-header div.logo-wrapper div {
+  width: 100%;
+  margin-top: 18px;
+}
+header#page-header div.logo-wrapper div a {
+  display: block;
+  cursor: pointer;
+  width: 100%;
+}
+header#page-header div.logo-wrapper div a svg,
+header#page-header div.logo-wrapper div a img {
+  width: 100%;
+}
+header#page-header div.search-form-container {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  padding: 0px 30px;
+}
+header#page-header div.search-form-container form {
+  display: block;
+  width: 100%;
+  position: relative;
+  max-width: 520px;
+}
+header#page-header div.search-form-container form div.search-input-wrapper {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 20px 6px;
+}
+header#page-header div.search-form-container form div.search-input-wrapper input {
+  width: 100%;
+  padding-right: 15px;
+  font-size: 18px;
+  font-weight: 400;
+  border: 0px;
+  outline: 0px;
+  background-color: transparent;
+}
+header#page-header div.search-form-container form div.search-input-wrapper button {
+  width: 35px;
+  height: 35px;
+  border: 0px;
+  background-color: transparent;
+  outline: 0px;
+}
+header#page-header div.search-form-container form div.search-input-wrapper button svg,
+header#page-header div.search-form-container form div.search-input-wrapper button img {
+  width: 100%;
+}
+header#page-header div.header-menu-wrapper {
+  width: max-content;
+  height: auto;
+}
+header#page-header div.header-menu-wrapper ul {
+  width: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+header#page-header div.header-menu-wrapper ul li {
+  margin: 0px 7px;
+}
+header#page-header div.header-menu-wrapper ul li a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: #333333;
+  font-size: 13px;
+}
+header#page-header div.header-menu-wrapper ul li a svg {
+  width: 18px;
+}
+header#page-header div.header-menu-wrapper ul li a span {
+  display: inline-block;
+  margin-left: 7px;
+}
+header#page-header div.header-menu-wrapper ul li a:hover, header#page-header div.header-menu-wrapper ul li a.active {
+  position: relative;
+}
+header#page-header div.header-menu-wrapper ul li a:hover::after, header#page-header div.header-menu-wrapper ul li a.active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #404040;
+  left: 0px;
+  right: 0px;
+  bottom: -1px;
+}
+header#page-header.fixed-header {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  z-index: 11;
+  padding: 2px 70px;
+}
+
+div#bottom-menu-control {
+  width: 100%;
+  max-width: 625px;
+  position: fixed;
+  background-color: white;
+  bottom: 0px;
+  left: 70px;
+  box-shadow: 0px -3px 11px 4px rgba(0, 0, 0, 0.09);
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  z-index: 10;
+  transition: width 0.3s ease-in-out, left 0.3s ease-in;
+}
+div#bottom-menu-control div {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+div#bottom-menu-control div ul {
+  width: 100%;
+  height: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div#bottom-menu-control div ul li {
+  width: 20%;
+}
+div#bottom-menu-control div ul li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 12px 11px;
+  transition: all 0.2s ease-in-out;
+}
+div#bottom-menu-control div ul li a i {
+  width: block;
+  width: 28px;
+}
+div#bottom-menu-control div ul li a i svg {
+  width: inherit;
+}
+div#bottom-menu-control div ul li a span {
+  display: block;
+  font-size: 12px;
+  font-weight: 500;
+  color: #303030;
+  margin-top: -2px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 0px 7px;
+  text-align: center;
+  white-space: nowrap;
+}
+div#bottom-menu-control div ul li a:hover {
+  transform: scale(1.4);
+}
+@media (max-width: 795px) {
+  div#bottom-menu-control {
+    left: 0px !important;
+    width: 100% !important;
+    max-width: unset !important;
+  }
+}
+
+div.data-composer-form-container,
+div.data-composer-form-container-element {
+  width: 100%;
+  max-width: 625px;
+  position: relative;
+  margin-bottom: 30px;
+}
+div.data-composer-form-container form,
+div.data-composer-form-container-element form {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+div.data-composer-form-container div.data-composer-area-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper {
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  border: 1px solid #f9f6f6;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.05);
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li {
+  width: 33.3333333333%;
+  padding: 5px 8px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li button,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li button {
+  background-color: #fbfbfb;
+  border-radius: 65px;
+  -webkit-border-radius: 65px;
+  border: 0px;
+  outline: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 6px 13px 7px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li button i,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li button i {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  margin-right: 12px;
+  align-items: center;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li button i svg,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li button i svg {
+  width: inherit;
+  height: inherit;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li button i.small,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li button i.small {
+  width: 13px;
+  height: unset;
+  margin-right: 8px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li button span,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li button span {
+  display: inline-block;
+  font-size: 14px;
+  color: #444444;
+  font-weight: 600;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li button:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li button:hover {
+  background-color: #ebebeb;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li button:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li button:active {
+  background-color: #dfdfdf;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li.back-button,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li.back-button {
+  width: max-content;
+}
+div.data-composer-form-container div.data-composer-area-wrapper ul li.back-button button i,
+div.data-composer-form-container-element div.data-composer-area-wrapper ul li.back-button button i {
+  margin: 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.text-area-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.text-area-wrapper {
+  width: 100%;
+  display: block;
+  padding: 20px 10px 10px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.text-area-wrapper textarea,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.text-area-wrapper textarea {
+  width: 100%;
+  height: 110px;
+  border: 0px;
+  outline: 0px;
+  font-size: 27px;
+  font-weight: 400;
+  color: #444444;
+  line-height: 35px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.text-area-wrapper textarea::-webkit-scrollbar-track,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.text-area-wrapper textarea::-webkit-scrollbar-track {
+  background: none transparent scroll repeat 0% 0%;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.text-area-wrapper textarea::-webkit-scrollbar,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.text-area-wrapper textarea::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.text-area-wrapper textarea::-webkit-scrollbar-thumb,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.text-area-wrapper textarea::-webkit-scrollbar-thumb {
+  background-color: #c5c5c5;
+  border-radius: 15px;
+  width: 6px;
+  cursor: initial;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.text-area-wrapper textarea::-webkit-scrollbar-thumb:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.text-area-wrapper textarea::-webkit-scrollbar-thumb:hover {
+  background-color: #747474;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container {
+  width: 100%;
+  position: relative;
+  height: auto;
+  display: block;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 180px;
+  border: 5px solid #ffffff;
+  outline: 2px dashed #dfdfdf;
+  background-color: #f7f7f7;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  text-transform: uppercase;
+  color: #999999;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper input,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper input {
+  position: absolute;
+  display: none;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper div,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper div {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper div data,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper div data {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper div data i,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper div data i {
+  display: inline-block;
+  font-size: 40px;
+  font-weight: 700;
+  color: inherit;
+  margin: -7px 4px 0px 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper div p,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper div p {
+  display: block;
+  width: 100%;
+  font-size: 11px;
+  font-weight: 400;
+  color: #adadad;
+  margin: -14px 0px 0px;
+  text-align: center;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper:hover {
+  background-color: #ebebeb;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container label.data-drop-zone-wrapper:active {
+  background-color: #e5e5e5;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options {
+  width: max-content;
+  height: auto;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul li,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul li {
+  display: inline-flex;
+  justify-content: flex-end;
+  width: unset;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul li button,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul li button {
+  background-color: #d5d5d5;
+  border: 0px;
+  outline: 0px;
+  color: #404040;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  padding: 8px 10px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul li button:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul li button:hover {
+  background-color: #afafaf;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul li button:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-container div.data-drop-zone-options ul li button:active {
+  background-color: #838383;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-loading-screen,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-loading-screen {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 5;
+  background-color: rgba(255, 255, 255, 0.95);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-loading-screen div,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-loading-screen div {
+  width: 60%;
+  height: auto;
+  position: relative;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-loading-screen div span,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-loading-screen div span {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-loading-screen div u,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-loading-screen div u {
+  width: 100%;
+  height: 6px;
+  display: block;
+  margin-top: 20px;
+  position: relative;
+  border-radius: 120px;
+  background-color: #e9e4f1;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-loading-screen div u i,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-loading-screen div u i {
+  height: 100%;
+  display: block;
+  border-radius: inherit;
+  background-color: #9765b1;
+  transition: width 1.2s ease-in-out;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-drop-zone-loading-screen div u b,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-drop-zone-loading-screen div u b {
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  display: block;
+  background-color: #9765b1;
+  animation: borealisBar 1.3s linear infinite;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  padding: 30px 15px 15px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container.x-maximized div.data-drop-zone-container,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container.x-maximized div.data-drop-zone-container {
+  height: 1200px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container.x-maximized div.data-drop-zone-container label.data-drop-zone-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container.x-maximized div.data-drop-zone-container label.data-drop-zone-wrapper {
+  height: inherit;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container {
+  width: 100%;
+  height: auto;
+  display: block;
+  padding: 10px 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper {
+  width: 100%;
+  height: auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #000000;
+  transition: background-color 0.3s ease-in-out;
+  margin: 0px 0px 15px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper img {
+  width: 100%;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  transition: all 0.3s ease-in-out;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: none;
+  transition: all 0.3s ease-in-out;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul {
+  width: 100%;
+  display: flex;
+  padding: 15px;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: -8px;
+  width: max-content;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button,
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label {
+  background-color: rgba(0, 0, 0, 0.22);
+  border: 0px;
+  outline: 0px;
+  cursor: pointer;
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  transition: background-color 0.3s ease-in-out;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button i,
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label i,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button i,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label i {
+  display: block;
+  margin: -3px 0px 0px 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button i svg,
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label i svg,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button i svg,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label i svg {
+  width: 12px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button span,
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label span,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button span,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label span {
+  color: #ffffff;
+  text-shadow: 2px 3px 10px rgba(0, 0, 0, 0.003);
+  font-size: 11px;
+  margin-left: 3px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button:hover,
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label:hover {
+  background-color: rgba(0, 0, 0, 0.52);
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button:active,
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li button:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label:active {
+  background-color: rgba(0, 0, 0, 0.72);
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper div.data-selected-video-preview-thumbnail-header ul li label {
+  padding: 6px 13px 7px;
+  border-radius: 65px;
+  -webkit-border-radius: 65px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper button.data-selected-video-preview-button,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper button.data-selected-video-preview-button {
+  position: absolute;
+  background-color: transparent;
+  border: 0px;
+  outline: 0px;
+  display: none;
+  flex-direction: row;
+  top: 50%;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  width: max-content;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper button.data-selected-video-preview-button i,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper button.data-selected-video-preview-button i {
+  display: block;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper button.data-selected-video-preview-button i svg,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper button.data-selected-video-preview-button i svg {
+  color: #ffffff;
+  text-shadow: 2px 1px 16px rgba(0, 0, 0, 0.92);
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper button.data-selected-video-preview-button p,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper button.data-selected-video-preview-button p {
+  margin: 0px 0px -1px 6px;
+  font-weight: 600;
+  color: #ffffff;
+  text-shadow: 2px 1px 16px rgba(0, 0, 0, 0.92);
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper:hover img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper:hover img {
+  opacity: 0.5;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper:hover div.data-selected-video-preview-thumbnail-header,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper:hover div.data-selected-video-preview-thumbnail-header {
+  display: block;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper:hover button.data-selected-video-preview-button,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper:hover button.data-selected-video-preview-button {
+  display: flex;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper:hover button.data-selected-video-preview-button:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-preview-thumbnail-wrapper:hover button.data-selected-video-preview-button:hover {
+  transform: scale(1.7);
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper {
+  width: calc(100% + 12px);
+  height: auto;
+  display: block;
+  padding: 0px 0px 5px;
+  margin-left: -6px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li {
+  width: 140px;
+  max-width: 140px;
+  height: 210px;
+  margin: 0px 6px 12px 6px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div {
+  width: 140px;
+  height: inherit;
+  background-color: #ebebeb;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div img {
+  width: 100%;
+  height: inherit;
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  object-fit: cover;
+  -webkit-object-fit: cover;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div:hover {
+  background-color: #cacaca;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div:hover img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div:hover img {
+  opacity: 0.8;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div:active {
+  background-color: #b4b4b4;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div:active img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li div:active img {
+  opacity: 0.6;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div {
+  background-color: #d7a4eb;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div img {
+  opacity: 0.4;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div:hover {
+  background-color: #b782cf;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div:hover img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div:hover img {
+  opacity: 0.3;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div:active {
+  background-color: #9f72bd;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div:active img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-selected-video-thumbnail-alternates-wrapper ol.data-selected-video-thumbnail-alternates-list li.x-selected div:active img {
+  opacity: 0.2;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container {
+  width: 100%;
+  display: block;
+  position: relative;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description {
+  height: unset;
+  max-height: unset;
+  padding: 20px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description::-webkit-scrollbar-track,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description::-webkit-scrollbar-track {
+  background: none transparent scroll repeat 0% 0%;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description::-webkit-scrollbar,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description::-webkit-scrollbar {
+  background-color: transparent;
+  width: 6px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description::-webkit-scrollbar-thumb,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description::-webkit-scrollbar-thumb {
+  background-color: #c5c5c5;
+  border-radius: 15px;
+  width: 6px;
+  cursor: initial;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description::-webkit-scrollbar-thumb:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container textarea#post-video-description::-webkit-scrollbar-thumb:hover {
+  background-color: #747474;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container label.form-floating-label,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container label.form-floating-label {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #505050;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper {
+  width: 100%;
+  height: auto;
+  margin: 10px 0px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  background-color: #fbfbfb;
+  padding: 21px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper strong,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper strong {
+  display: block;
+  font-weight: 500;
+  font-size: 20px;
+  color: #828282;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  padding: 0px 8px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li {
+  margin: 5px;
+  width: unset;
+  padding: 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  padding: 2px 11px 5px 20px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span i,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span i {
+  font-style: normal;
+  outline: 0px;
+  border: 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span button,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span button {
+  width: unset;
+  background-color: transparent;
+  padding: 6px 8px 7px;
+  margin-bottom: -5px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span button:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span button:hover {
+  background-color: transparent;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span button:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container div.data-video-tags-list-wrapper ul li span button:active {
+  background-color: transparent;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container p.form-floating-note,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-video-drop-zone-container div.data-selected-video-preview-container div.data-video-data-group-container p.form-floating-note {
+  margin: -0.85rem 0px 1rem;
+  color: #c3c3c3;
+  font-size: 12px;
+  text-align: right;
+  display: block;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper {
+  width: calc(100% + 40px);
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: -20px;
+  padding: 20px 10px 5px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview {
+  width: 100%;
+  position: relative;
+  outline: 0px;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  -webkit-object-fit: cover;
+  -webkit-object-position: center;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div {
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 25px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div button,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div button {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  background-color: #d7d7d7;
+  font-size: 23px;
+  color: #404040;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: 0px;
+  outline: 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div button i,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div button i {
+  display: inline-block;
+  font-size: inherit;
+  margin-top: -5px;
+  font-style: normal;
+  font-weight: 300;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div button:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div button:hover {
+  background-color: #b6b6b6;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div button:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview div button:active {
+  background-color: #9c9c9c;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview:hover {
+  opacity: 0.8;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-square,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-square {
+  width: 50%;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-expand,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-expand {
+  width: 100%;
+  height: 100% !important;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.96);
+  z-index: 20;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-expand img,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-expand img {
+  width: 70%;
+  max-width: 530px;
+  height: unset;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-expand ul,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-expand ul {
+  width: 70%;
+  max-width: 530px;
+  padding: 15px 30px 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-expand:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-photo-previews-wrapper div.data-photo-preview.x-expand:hover {
+  opacity: 1;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-composer-submit,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-composer-submit {
+  width: 100%;
+  height: auto;
+  padding: 20px 0px 0px;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-composer-submit button,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-composer-submit button {
+  width: 100%;
+  height: auto;
+  padding: 8px 18px;
+  border: 0px;
+  outline: 0px;
+  border-radius: 100px;
+  background-color: #7c0a6e;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-composer-submit button:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-composer-submit button:hover {
+  background-color: #5a0850;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-composer-submit button:active,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-composer-submit button:active {
+  background-color: #3f0539;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-composer-submit button[disabled],
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-composer-submit button[disabled] {
+  cursor: not-allowed;
+  background-color: rgba(124, 10, 110, 0.18);
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-composer-submit button[disabled]:hover,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-composer-submit button[disabled]:hover {
+  background-color: rgba(124, 10, 110, 0.18);
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-composer-loading,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-composer-loading {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.97);
+  border-radius: inherit;
+  -webkit-border-radius: inherit;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-size: 27px;
+  color: #444444;
+}
+div.data-composer-form-container div.data-composer-area-wrapper div.data-composer-loading i,
+div.data-composer-form-container-element div.data-composer-area-wrapper div.data-composer-loading i {
+  display: inline-block;
+  width: 31px;
+  height: 3px;
+  background-color: #444444;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  margin-right: 15px;
+  animation: RotateSpinner 0.3s ease-in infinite;
+}
+div.data-composer-form-container div.data-fixed-composer-area-container,
+div.data-composer-form-container-element div.data-fixed-composer-area-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  background-color: rgba(0, 0, 0, 0.9);
+  display: flex;
+  padding: 120px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow: auto;
+  z-index: 30;
+}
+div.data-composer-form-container div.data-fixed-composer-area-container div.data-close-button-wrapper,
+div.data-composer-form-container-element div.data-fixed-composer-area-container div.data-close-button-wrapper {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+}
+div.data-composer-form-container div.data-fixed-composer-area-container div.data-close-button-wrapper button,
+div.data-composer-form-container-element div.data-fixed-composer-area-container div.data-close-button-wrapper button {
+  background-color: #ffffff;
+  border: 0px;
+  outline: 0px;
+  color: #404040;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.data-composer-form-container div.data-fixed-composer-area-container div.data-close-button-wrapper button:hover,
+div.data-composer-form-container-element div.data-fixed-composer-area-container div.data-close-button-wrapper button:hover {
+  background-color: #dfdfdf;
+}
+div.data-composer-form-container div.data-fixed-composer-area-container div.data-close-button-wrapper button:active,
+div.data-composer-form-container-element div.data-fixed-composer-area-container div.data-close-button-wrapper button:active {
+  background-color: #bbbbbb;
+}
+div.data-composer-form-container div.data-fixed-composer-area-container div.data-close-button-wrapper button svg,
+div.data-composer-form-container-element div.data-fixed-composer-area-container div.data-close-button-wrapper button svg {
+  width: 90%;
+}
+div.data-composer-form-container div.data-fixed-composer-area-container div.data-composer-area-wrapper,
+div.data-composer-form-container-element div.data-fixed-composer-area-container div.data-composer-area-wrapper {
+  display: block;
+  max-width: 830px;
+}
+div.data-composer-form-container div.data-fixed-composer-area-container div.data-composer-area-wrapper div.text-area-wrapper textarea,
+div.data-composer-form-container-element div.data-fixed-composer-area-container div.data-composer-area-wrapper div.text-area-wrapper textarea {
+  height: 270px;
+}
+div.data-composer-form-container div.my-box,
+div.data-composer-form-container-element div.my-box {
+  width: 500px;
+  height: 300px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px;
+}
+
+div.data-page-header-shadow {
+  width: 100%;
+  height: 100px;
+  display: block;
+}

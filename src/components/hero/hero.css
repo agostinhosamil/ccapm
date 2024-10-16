@@ -1,0 +1,120 @@
+.hero-block {
+  margin: 65px 0 0;
+}
+
+.hero-block .carousel-item:before {
+  content: '';
+  /*background: rgba(0, 0, 0, 0.7);*/
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.hero-block .carousel-item img {
+  width: 100%;
+}
+
+.button {
+  font-size: 14px;
+  padding: 5px 15px;
+  border-radius: 25px;
+  border: none;
+}
+
+.hero-block p {
+  margin: 0 0 30px;
+}
+
+.btn1, .btn2 {
+  padding: 7px 17px 11px;
+  transition: all .4s ease-in-out;
+}
+
+.btn1:hover, .btn2:hover {
+  transform: scale(1.3);
+}
+
+.btn1 {
+  background-color: #7ca915;
+  color: #fff;
+}
+
+.btn1:hover {
+  background-color: #7ca915;
+  color: #fff;
+}
+
+.btn2 {
+  background-color: #656565;
+  color: #fff;
+}
+
+.btn2:hover {
+  background-color: #656565;
+  color: #fff;
+}
+
+
+
+@media only screen and (min-width: 1025px) {
+
+  a[href^=tel],
+  a[href^=skype],
+  a[href^=sms] {
+    cursor: default;
+    pointer-events: none;
+  }
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}

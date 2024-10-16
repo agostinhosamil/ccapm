@@ -1,0 +1,7 @@
+{
+  "rewrites": {
+    "/api/private/*": "/api/privates",
+    "/private/*": "/api/privates",
+    "/action/*": "/api/actions"
+  }
+}
