@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit bootstrap="tests/bootstrap.php"
+  backupGlobals="false"
+  backupStaticAttributes="false"
+  colors="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  processIsolation="false"
+  stopOnFailure="false">
+  <testsuites>
+    <testsuite name="My Project Unitary Tests">
+      <directory suffix="Test.php">tests/unitary</directory>
+    </testsuite>
+    <testsuite name="My Project Integration Tests">
+      <directory suffix="Test.php">tests/integration</directory>
+    </testsuite>
+  </testsuites>
+  <coverage includeUncoveredFiles="true"
+    pathCoverage="false"
+    ignoreDeprecatedCodeUnits="true"
+    disableCodeCoverageIgnore="true">
+    <include>
+      <directory suffix=".php">tests</directory>
+    </include>
+    <report>
+      <clover outputFile="clover.xml" />
+      <cobertura outputFile="cobertura.xml" />
+      <crap4j outputFile="crap4j.xml" threshold="50" />
+      <html outputDirectory="html-coverage" lowUpperBound="50" highLowerBound="90" />
+      <php outputFile="coverage.php" />
+      <text outputFile="coverage.txt" showUncoveredFiles="false" showOnlySummary="true" />
+      <xml outputDirectory="coverage" />
+    </report>
+  </coverage>
+</phpunit>

@@ -51,7 +51,8 @@
     "ysamark/trounex-core": "dev-main"
   },
   "require-dev": {
-    "ysamark/trounex-dev-packs": "dev-main"
+    "ysamark/trounex-dev-packs": "dev-main",
+    "phpunit/phpunit": "^11.4"
   },
   "config": {
     "allow-plugins": {

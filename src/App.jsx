@@ -3,6 +3,7 @@ import "./App.css";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
+import { Chat } from "./components/Chat";
 import Layout from "./components/Layout";
 import { AppContextProvider } from "./contexts/AppContext";
 import { AuthContextProvider } from "./contexts/AuthContext";
@@ -23,6 +24,7 @@ function App() {
               <Route path="blog" element={<Blog />}></Route>
               <Route path="contact" element={<Contact />}></Route>
               <Route path="me" element={<h1>Me</h1>}></Route>
+              <Route path="chat" element={<Chat />}></Route>
             </Route>
           </Routes>
         </BrowserRouter>

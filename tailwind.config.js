@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 export default {
-  content: ["./src/*.js", "./src/**/*.{js,jsx}"],
+  content: ["./src/*.js", "./src/**/*.{js,jsx,tsx}"],
   darkMode: "class",
   theme: {
     extend: {
@@ -57,7 +58,7 @@ export default {
       ],
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar")],
   corePlugins: {
     preflight: false,
   },

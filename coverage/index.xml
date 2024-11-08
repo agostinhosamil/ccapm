@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<phpunit xmlns="https://schema.phpunit.de/coverage/1.0">
+  <build time="Mon Oct 28 15:04:11 CET 2024" phpunit="10.5.37" coverage="10.1.16">
+    <runtime name="PHP" version="8.2.12" url="https://www.php.net/"/>
+    <driver name="xdebug" version="3.3.2"/>
+  </build>
+  <project source="C:\xampp8\htdocs\ccapm\tests">
+    <tests>
+      <test name="tests\UserModelTest::testItShouldBeOk" size="unknown" status="success"/>
+    </tests>
+    <directory name="/">
+      <totals>
+        <lines total="19" comments="0" code="19" executable="4" executed="3" percent="75.00"/>
+        <methods count="1" tested="1" percent="100.00"/>
+        <functions count="0" tested="0" percent="0"/>
+        <classes count="1" tested="1" percent="100.00"/>
+        <traits count="0" tested="0" percent="0"/>
+      </totals>
+      <file name="UserModelTest.php" href="UserModelTest.php.xml">
+        <totals>
+          <lines total="15" comments="0" code="15" executable="3" executed="3" percent="100.00"/>
+          <methods count="1" tested="1" percent="100.00"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="1" tested="1" percent="100.00"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+      <file name="bootstrap.php" href="bootstrap.php.xml">
+        <totals>
+          <lines total="4" comments="0" code="4" executable="1" executed="0" percent="0.00"/>
+          <methods count="0" tested="0" percent="0"/>
+          <functions count="0" tested="0" percent="0"/>
+          <classes count="0" tested="0" percent="0"/>
+          <traits count="0" tested="0" percent="0"/>
+        </totals>
+      </file>
+    </directory>
+  </project>
+</phpunit>

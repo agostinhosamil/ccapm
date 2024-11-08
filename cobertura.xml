@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.75" branch-rate="0" lines-covered="3" lines-valid="4" branches-covered="0" branches-valid="0" complexity="1" version="0.4" timestamp="1730124250">
+  <sources>
+    <source>C:\xampp8\htdocs\ccapm\tests</source>
+  </sources>
+  <packages>
+    <package name="UserModelTest.php" line-rate="1" branch-rate="0" complexity="1">
+      <classes>
+        <class name="tests\UserModelTest" filename="UserModelTest.php" line-rate="1" branch-rate="0" complexity="1">
+          <methods>
+            <method name="testItShouldBeOk" signature="" line-rate="1" branch-rate="0" complexity="1">
+              <lines>
+                <line number="9" hits="1"/>
+                <line number="10" hits="1"/>
+                <line number="12" hits="1"/>
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1"/>
+            <line number="10" hits="1"/>
+            <line number="12" hits="1"/>
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="bootstrap.php" line-rate="0" branch-rate="0" complexity="0">
+      <classes/>
+    </package>
+  </packages>
+</coverage>
