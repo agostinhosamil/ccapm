@@ -1,0 +1,62 @@
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "module": "ESNext",
+    "skipLibCheck": true,
+
+    "declaration": true,
+    "declarationDir": "./dist",
+    "declarationMap": true,
+
+    "moduleResolution": "node",
+    "allowImportingTsExtensions": true,
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "allowSyntheticDefaultImports": true,
+    
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "paths": {
+      "client@*": [
+        "./src/*"
+      ],
+
+      "client@components/*": [
+        "./src/components/*"
+      ],
+
+      "client@utils/*": [
+        "./src/utils/*"
+      ],
+
+      "client@config/*": [
+        "./src/config/*"
+      ],
+
+      "client@contexts/*": [
+        "./src/contexts/*"
+      ],
+
+      "client@hooks/*": [
+        "./src/hooks/*"
+      ],
+
+      "client@pages/*": [
+        "./src/pages/*"
+      ]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

@@ -2,8 +2,8 @@
 
 namespace API;
 
-use App\Models\Appointment;
 use App\Controllers\BaseController;
+use DateTime;
 
 class Appointments extends BaseController {
   /**
@@ -14,6 +14,7 @@ class Appointments extends BaseController {
   private $validations = [
     'appointment.description' => 'required|min:5',
     'appointment.date' => 'required',
+    'appointment.time' => 'required',
     'appointment.doctor' => 'exists:user,key',
     // 'owner_type' => 'required',
     // 'owner_id' => 'required',
@@ -38,15 +39,21 @@ class Appointments extends BaseController {
     // }
 
     if ($validation->fails ()) {
-      $response->end ([
-        'type' => 'error',
-        'error' => 'appointment:create',
-        'message' => 'could not create appointment',
-        'data' => $validation->errors ()->all ()
-      ]);
+      $response->status (400)
+        ->end ([
+          'type' => 'error',
+          'error' => 'appointment:create',
+          'message' => 'could not create appointment',
+          'data' => $validation->errors ()->all ()
+        ]);
     }
 
+    
     $appointmentData = $requestData ['appointment'];
+
+    $dateTime = new DateTime(join (' ', [$appointmentData['date'], $appointmentData['time']]));
+
+    $appointmentData['date'] = $dateTime->format('Y-m-d H:i:s');
 
     $appointment = $this->user
       ->appointments ()

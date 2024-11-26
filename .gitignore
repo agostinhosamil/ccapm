@@ -23,3 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 vendor
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/

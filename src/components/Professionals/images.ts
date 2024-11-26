@@ -1,0 +1,9 @@
+export { default as doctor1 } from "../../assets/images/doctor1.jpg";
+export { default as doctor2 } from "../../assets/images/doctor2.jpg";
+export { default as doctor3 } from "../../assets/images/doctor3.jpg";
+export { default as doctor4 } from "../../assets/images/doctor4.jpg";
+export { default as doctor5 } from "../../assets/images/doctor5.jpg";
+export { default as doctor6 } from "../../assets/images/doctor6.jpg";
+export { default as doctor7 } from "../../assets/images/doctor7.jpg";
+export { default as doctor8 } from "../../assets/images/doctor8.jpg";
+export { default as doctor9 } from "../../assets/images/doctor9.jpg";
