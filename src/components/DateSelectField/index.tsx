@@ -43,7 +43,7 @@ const generateTimeRange = (): Array<TimeData> => {
   const timeRange: Array<TimeData> = [];
 
   const closingTime: TimeData = {
-    hour: 18,
+    hour: 28,
     min: 0,
   };
 
@@ -113,7 +113,7 @@ export const DateSelectField: DateSelectFieldComponent = (props) => {
                 <button
                   key={i}
                   onClick={() => {
-                    setDate(date);
+                    setDate(date.split("/").join("-"));
                   }}
                   type="button"
                   className="flex flex-grow flex-row justify-center items-center bg-zinc-200 outline-none border-0 hover:bg-zinc-300 active:bg-zinc-400 text-zinc-800 px-6 py-2 rounded-lg text-xs"

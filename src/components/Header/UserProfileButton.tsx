@@ -33,10 +33,9 @@ export const UserProfileButton = () => {
   };
 
   const messageButtonClickHandler = async () => {
-    await showAlert({
-      title: "Hey Man",
-      description: "lorem ipsum dolor sit ame",
-    });
+    localStorage.clear();
+
+    location.reload();
   };
 
   const deleteAppointmentHandler = async (appointment: Appointment) => {
@@ -119,7 +118,7 @@ export const UserProfileButton = () => {
                       onClick={messageButtonClickHandler}
                       className="text-white py-2 px-4 uppercase rounded bg-gray-700 hover:bg-gray-800 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
                     >
-                      Message
+                      Sair da conta
                     </button>
                   </div>
                 </div>
