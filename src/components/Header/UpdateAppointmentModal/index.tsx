@@ -1,10 +1,11 @@
 import { formDataToJson } from "@verdantkit/utils";
 import { Fragment, useEffect, useState } from "react";
-import { Col, Row } from "react-bootstrap";
+import { Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import Modal from "react-bootstrap/Modal";
 
+import { DateSelectField } from "client@components/DateSelectField";
 import { axios } from "client@config/axios";
 import { useApp } from "client@contexts/AppContext";
 import { DefaultHandler } from "client@contexts/AppContext/types";
@@ -69,7 +70,7 @@ export const UpdateAppointmentModal = ({
             <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
               <div className="w-full flex flex-col gap-3">
                 <Row>
-                  <Col sm={6}>
+                  {/* <Col sm={6}>
                     <Form.Label>Data</Form.Label>
                     <Form.Control
                       name="appointment[date]"
@@ -86,7 +87,8 @@ export const UpdateAppointmentModal = ({
                       placeholder="exemplo@gmail.com"
                       defaultValue={props.appointment?.time}
                     />
-                  </Col>
+                  </Col> */}
+                  <DateSelectField fieldKeyTemplate="appointment[$0]" />
                 </Row>
               </div>
             </Form.Group>

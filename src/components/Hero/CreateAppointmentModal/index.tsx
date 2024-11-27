@@ -42,8 +42,6 @@ export const CreateAppointmentModal = ({
         if (typeof response.data === "object" && response.data.appointment) {
           alert("Agendamento criado com sucesso");
 
-          console.log(">> response.data", response.data);
-
           if (response.data.user) {
             setUserData(response.data.user);
             setShowSetPassword(true);
@@ -179,7 +177,7 @@ export const CreateAppointmentModal = ({
                   </Col>
                 </Row> */}
 
-                <DateSelectField />
+                <DateSelectField fieldKeyTemplate="appointment[$0]" />
               </div>
             </Form.Group>
             <Form.Group

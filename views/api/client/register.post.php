@@ -6,6 +6,7 @@ use Trounex\Cookie;
 use App\Controllers\BaseController;
 use App\Models\Appointment;
 use App\Models\User;
+use DateTime;
 
 class Register extends BaseController {
   function handler ($request, $response) {
@@ -15,7 +16,7 @@ class Register extends BaseController {
       'user.email',
       'user.phone',
       'appointment.date',
-      // 'appointment.time',
+      'appointment.time',
       'appointment.description',
     ]);
 
@@ -44,7 +45,13 @@ class Register extends BaseController {
       $user = User::create($userData);
     }
 
-    $appointment = $user->appointments()->create(array_merge($requestData['appointment'], [
+    $appointmentData = $requestData ['appointment'];
+
+    $dateTime = new DateTime(join (' ', [$appointmentData['date'], $appointmentData['time']]));
+
+    $appointmentData['date'] = $dateTime->format('Y-m-d H:i:s');
+
+    $appointment = $user->appointments()->create(array_merge($appointmentData, [
       'key' => generate_unique_id(),
     ]));
 

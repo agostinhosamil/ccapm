@@ -21,7 +21,7 @@ export const AuthContextProvider = (props: React.PropsWithChildren) => {
 
   const loginFormSubmitHandler = async (event: React.FormEvent) => {
     if (typeof loginFormSubmitHandlerState.current === "function") {
-      await loginFormSubmitHandlerState.current(event);
+      return await loginFormSubmitHandlerState.current(event);
     }
   };
 
@@ -47,9 +47,12 @@ export const AuthContextProvider = (props: React.PropsWithChildren) => {
               ...response.data.user,
               appointments: userAppointmentsResponse.data,
             });
+
             setShowLoginDialog(false);
 
-            return resolve(response.data.user);
+            resolve(response.data.user);
+
+            return true;
           }
 
           resolve(false);

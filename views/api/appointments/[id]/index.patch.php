@@ -4,6 +4,7 @@ namespace API\Appointments;
 
 use App\Models\Appointment;
 use App\Controllers\BaseController;
+use DateTime;
 
 class Update extends BaseController {
   /**
@@ -14,6 +15,7 @@ class Update extends BaseController {
   private $validations = [
     'appointment.description' => 'required|min:5',
     'appointment.date' => 'required',
+    'appointment.time' => 'required',
     // 'appointment.doctor' => 'exists:user,key',
     // 'owner_type' => 'required',
     // 'owner_id' => 'required',
@@ -37,6 +39,10 @@ class Update extends BaseController {
     }
 
     $appointmentData = $requestData ['appointment'];
+
+    $dateTime = new DateTime(join (' ', [$appointmentData['date'], $appointmentData['time']]));
+
+    $appointmentData['date'] = $dateTime->format('Y-m-d H:i:s');
 
     $appointment = $this->appointment
       ->update (array_merge ($appointmentData, [

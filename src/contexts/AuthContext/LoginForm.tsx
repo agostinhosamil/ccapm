@@ -21,7 +21,9 @@ const LoginFormSchema = z.object({
 });
 
 export const LoginForm = ({ onSubmit, onClose }: LoginFormProps) => {
-  const [formError, setFormError] = useState<z.ZodIssue>();
+  const [formError, setFormError] = useState<
+    z.ZodIssue | { message: string }
+  >();
 
   const app = useApp();
 
@@ -54,7 +56,13 @@ export const LoginForm = ({ onSubmit, onClose }: LoginFormProps) => {
     }
 
     app.resolvePromise(async () => {
-      await onSubmit(event);
+      const response = await onSubmit(event);
+
+      if (!(typeof response === "boolean" && response)) {
+        setFormError({
+          message: "Usuário ou senha incorreto",
+        });
+      }
     });
   };
 
@@ -73,21 +81,19 @@ export const LoginForm = ({ onSubmit, onClose }: LoginFormProps) => {
 
   const usernameFieldBlurHandler = (
     event: React.FocusEvent<HTMLInputElement>
-  ) => {
-    const dataSchema = z.string().email("O email fornecido não é válido");
-
-    throwErrorIfFieldIsInvalid(dataSchema, event);
-  };
+  ) =>
+    throwErrorIfFieldIsInvalid(
+      z.string().email("O email fornecido não é válido"),
+      event
+    );
 
   const passwordFieldBlurHandler = (
     event: React.FocusEvent<HTMLInputElement>
-  ) => {
-    const dataSchema = z
-      .string()
-      .min(6, "A palavra passe deve conter ao menos 6 caracteres");
-
-    throwErrorIfFieldIsInvalid(dataSchema, event);
-  };
+  ) =>
+    throwErrorIfFieldIsInvalid(
+      z.string().min(6, "A palavra passe deve conter ao menos 6 caracteres"),
+      event
+    );
 
   return (
     <div className="flex size-full z-50 flex-row justify-center bg-zinc-950 bg-opacity-90 fixed left-0 top-0 overflow-y-auto">
