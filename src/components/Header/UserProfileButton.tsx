@@ -116,9 +116,9 @@ export const UserProfileButton = () => {
                     </button>
                     <button
                       onClick={messageButtonClickHandler}
-                      className="text-white py-2 px-4 uppercase rounded bg-gray-700 hover:bg-gray-800 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
+                      className="text-white py-2 px-4 uppercase rounded bg-red-700 hover:bg-red-800 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5"
                     >
-                      Sair da conta
+                      Terminar sessão
                     </button>
                   </div>
                 </div>

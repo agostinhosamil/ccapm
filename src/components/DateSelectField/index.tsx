@@ -1,4 +1,4 @@
-import { noEmpty, Nullish } from "@verdantkit/utils";
+import { noEmpty, Nullish, Optional } from "@verdantkit/utils";
 import { Fragment, useState } from "react";
 import { FaAngleRight } from "react-icons/fa";
 import { FaAngleLeft } from "react-icons/fa6";
@@ -13,22 +13,30 @@ type DateSelectFieldProps = {
 
 type DateSelectFieldComponent = React.FunctionComponent<DateSelectFieldProps>;
 
+const getFutureDateInDays = (days: number = 0): Date => {
+  const date = new Date();
+
+  date.setDate(date.getDate() + days);
+
+  return date;
+};
+
 const generateDateRange = (
   min: number = 0,
   max: number = 20
 ): Array<string> => {
   const dateRange: Array<string> = [];
 
-  let date = new Date(Date.now());
+  let date = getFutureDateInDays(min);
 
-  const day = date.getDate();
+  const limit = min + max;
 
-  for (let i = min; i <= min + max; i++) {
-    date.setDate(day + i);
-
+  for (let i = min; i < limit; i++) {
     dateRange.push(
       [date.getDate(), date.getMonth(), date.getFullYear()].join("/")
     );
+
+    date.setDate(date.getDate() + 1);
   }
 
   return dateRange;
@@ -39,22 +47,37 @@ type TimeData = {
   min: number;
 };
 
-const generateTimeRange = (): Array<TimeData> => {
+const generateTimeRange = (date: Optional<string>): Array<TimeData> => {
   const timeRange: Array<TimeData> = [];
 
   const closingTime: TimeData = {
-    hour: 28,
+    hour: 18,
     min: 0,
   };
 
+  const currentDate = new Date(Date.now());
+
   let currentHours: TimeData = {
-    hour: new Date(Date.now()).getHours() + 1,
+    hour: currentDate.getHours() + 1,
     min: 0,
   };
 
   const mins = [0, 15, 30, 45];
 
-  for (let i = currentHours.hour; i <= closingTime.hour; i++) {
+  const [day, mon, year] =
+    typeof date === "string"
+      ? date.split("-").map((s) => parseInt(s))
+      : [
+          currentDate.getDate(),
+          currentDate.getMonth(),
+          currentDate.getFullYear(),
+        ];
+
+  const appointmentDate = new Date(year, mon, day);
+  const rangeStart =
+    appointmentDate.getTime() === currentDate.getTime() ? currentHours.hour : 8;
+
+  for (let i = rangeStart; i <= closingTime.hour; i++) {
     for (const min of mins) {
       if (closingTime.hour <= i && closingTime.min < min) {
         continue;
@@ -78,7 +101,7 @@ export const DateSelectField: DateSelectFieldComponent = (props) => {
   const DATE_RANGE_INTERVAL = 23;
 
   const dateRange = generateDateRange(dateRangeStart, DATE_RANGE_INTERVAL);
-  const timeRange = generateTimeRange();
+  const timeRange = generateTimeRange(date);
 
   const fieldName = (key: string): string => {
     const template = props.fieldKeyTemplate;
@@ -127,7 +150,9 @@ export const DateSelectField: DateSelectFieldComponent = (props) => {
                 <button
                   type="button"
                   disabled={dateRangeStart < 1}
-                  onClick={() => setDateRangeStart(dateRangeStart - 1)}
+                  onClick={() =>
+                    setDateRangeStart(dateRangeStart - DATE_RANGE_INTERVAL)
+                  }
                   className="px-2 py-1 bg-zinc-200 text-zinc-800 outline-none border-0 disabled:opacity-35 disabled:cursor-not-allowed"
                 >
                   <i>
@@ -138,7 +163,9 @@ export const DateSelectField: DateSelectFieldComponent = (props) => {
               <div className="inline-flex">
                 <button
                   type="button"
-                  onClick={() => setDateRangeStart(dateRangeStart + 1)}
+                  onClick={() =>
+                    setDateRangeStart(dateRangeStart + DATE_RANGE_INTERVAL)
+                  }
                   className="px-2 py-1 bg-zinc-200 text-zinc-800 outline-none border-0"
                 >
                   <i>
